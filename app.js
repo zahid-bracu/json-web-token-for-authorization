@@ -3,7 +3,7 @@ const app = express()
 const port = 5000
 const {createToken}=require('./jwt');
 
-createToken("token test");
+createToken();
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
